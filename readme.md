@@ -1,5 +1,7 @@
 # catwalk
-A website that brings together people who want to walk with their cats. 
+A website that brings together people who want to walk with their cats.
+
+![project image](https://i.hizliresim.com/zA6SIP.png)
 
 ## Project Details
 This is a MERN stack project. API coded with Node.js & Express. Data stored with MongoDB & Mongoose. Front end builded with React. GeoJSON used on distance.
