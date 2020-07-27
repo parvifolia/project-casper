@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  height: 100vh;
+  background-image: url(./img/paw.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 30%;
+}
+
+.Navbar .nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Navbar .nav-wrapper .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: 'Ranchers', cursive;
+  color: #35bdb6;
+}
+
+.Navbar .nav-wrapper .account {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #35bdb6;
+}
+
+.Navbar .nav-wrapper .account .login {
+  margin-right: 8%;
+}
+
+.Search .form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+}
+
+.Search .form-wrapper .city select {
+  width: 350px;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-bottom: 1px solid black;
+  color: darkslategray;
+  text-align: center;
+}
+
+.Search .form-wrapper .city select:visited, .Search .form-wrapper .city select:active, .Search .form-wrapper .city select:focus-within, .Search .form-wrapper .city select:focus {
+  outline: none;
+}
+
+.Search .form-wrapper .city input {
+  cursor: pointer;
+  width: 50px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-color: #35bdb6;
+  text-indent: -9999px;
+  background-image: url(./img/search.svg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Search .form-wrapper .city input:visited, .Search .form-wrapper .city input:active, .Search .form-wrapper .city input:focus-within, .Search .form-wrapper .city input:focus {
+  outline: none;
+}
+
+.Search .form-wrapper .long-lat {
+  display: none;
+}
+
+.Search .form-wrapper .long-lat input {
+  width: 175px;
+  height: 45px;
+  padding: 0;
+  font-size: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.Search .form-wrapper .long-lat input:nth-child(3) {
+  cursor: pointer;
+  border-bottom: none;
+  width: 50px;
+  background-color: #35bdb6;
+  text-indent: -9999px;
+  background-image: url(./img/search.svg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Search .form-wrapper .long-lat input:nth-child(3):visited, .Search .form-wrapper .long-lat input:nth-child(3):active, .Search .form-wrapper .long-lat input:nth-child(3):focus-within, .Search .form-wrapper .long-lat input:nth-child(3):focus {
+  outline: none;
+}
+
+.Search .form-wrapper .long-lat input:visited, .Search .form-wrapper .long-lat input:active, .Search .form-wrapper .long-lat input:focus-within, .Search .form-wrapper .long-lat input:focus {
+  outline: none;
+}
+
+.Search .form-wrapper .form-toggler {
+  margin-top: 1rem;
+  cursor: pointer;
+  color: #35bdb6;
+}
+
+.Search .form-wrapper .form-toggler:hover {
+  color: #17887e;
+}
+
+.Cats .cats-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.Cats .cats-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.Cats .cats-list ul li {
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  margin-bottom: 0.3rem;
+}
+
+.Cats .cats-list ul li .cat-items {
+  width: 90%;
+  margin: auto;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Cats .cats-list ul li .cat-items .false {
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  background: #ff5252;
+}
+
+.Cats .cats-list ul li .cat-items .true {
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  background: green;
+}
+
+.Cats .cats-list ul li .cat-items .dist {
+  color: green;
+  font-weight: bold;
+}
+
+.Parvifolia {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,205 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+// Reset
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Poppins', sans-serif;
+}
+
+// Variables
+$color1: rgb(53, 189, 182);
+
+
+// Components
+
+.App{
+    height: 100vh;
+    background-image: url(./img/paw.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 30%;
+}
+
+.Navbar {
+    .nav-wrapper{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        
+        .logo{
+            display: flex;
+            flex: 1;
+            font-family: 'Ranchers', cursive;
+            color: $color1;
+        }
+
+        .account{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: $color1;
+            
+            .login{
+                margin-right: 8%;
+            }
+        }
+        
+    }
+}
+
+.Search{
+    .form-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+
+        .city{
+            select{
+                width: 350px;
+                font-size: 30px;
+                font-family: 'Poppins', sans-serif;
+                border: none;
+                border-bottom: 1px solid black;
+                color: darkslategray;
+                text-align: center;
+
+                &:visited,&:active,&:focus-within,&:focus{
+                    outline: none;
+                }
+    
+            }
+            input{
+                cursor: pointer;
+                width: 50px;
+                height: 45px;
+                margin: 0;
+                padding:0;
+                font-size: 30px;
+                border: none;
+                font-family: 'Poppins', sans-serif;
+                text-align: center;
+                background-color: $color1;
+                text-indent: -9999px;
+                background-image: url(./img/search.svg);
+                background-size: 60%;
+                background-repeat: no-repeat;
+                background-position: center;
+                &:visited,&:active,&:focus-within,&:focus{
+                    outline: none;
+                }
+            }
+        }
+
+        .long-lat{
+            display: none;
+            input{
+                width: 175px;
+                height: 45px;
+                padding:0;
+                font-size: 30px;
+                border: none;
+                border-bottom: 1px solid black;
+                font-family: 'Poppins', sans-serif;
+                text-align: center;
+                &:nth-child(3) {
+                    cursor: pointer;
+                    border-bottom: none;
+                    width: 50px;
+                    background-color: $color1;
+                    text-indent: -9999px;
+                    background-image: url(./img/search.svg);
+                    background-size: 60%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    &:visited,&:active,&:focus-within,&:focus{
+                        outline: none;
+                    }
+                }
+
+                &:visited,&:active,&:focus-within,&:focus{
+                    outline: none;
+                }
+            }
+        }
+
+        .form-toggler{
+            margin-top: 1rem;
+            cursor: pointer;
+            color: $color1;
+
+            &:hover{
+                color: rgb(23, 136, 126)
+            }
+        }
+    }
+}
+
+
+.Cats{
+    .cats-list{
+        display: flex;
+        width: 50%;
+        margin: 1rem auto;
+
+        ul{
+            list-style: none;
+            margin:0;
+            padding:0;
+            text-align: center;
+            width: 100%;
+
+            li{
+                border: 1px solid black;
+                background-color: rgba($color: white, $alpha: 0.7);
+                width: 100%;
+                margin-bottom: 0.3rem;
+
+                .cat-items{
+                    width: 90%;
+                    margin: auto;
+                    height: 3rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .false{
+                        border-radius: 10px;
+                        width: 10px;
+                        height: 10px;
+                        background: #ff5252;
+                    }
+                    .true{
+                        border-radius: 10px;
+                        width: 10px;
+                        height: 10px;
+                        background: green;
+                    }
+                    .dist{
+                        color: green;
+                        font-weight: bold;
+                    }
+                }
+
+
+
+            }
+        }
+    }
+}
+
+.Parvifolia{
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    font-size: 0.8rem;
+}
