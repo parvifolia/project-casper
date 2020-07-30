@@ -1,24 +1,21 @@
-import React,{useState} from 'react';
+import React from 'react';
+import {BrowserRouter,Route} from 'react-router-dom'
 import Navbar from './components/Navbar';
-import Search from './components/Search';
-import Cats from './components/Cats';
-import Parvifolia from './components/Parvifolia';
+import Home from './components/Home'
+import AddCat from './components/AddCat';
+import Parvifolia from './components/Parvifolia'
 
 
 function App() {
 
-  const [cats,setCats] = useState({cats:""})
-
-  const dataBring = (data)=>{
-    setCats({cats:data})
-  }
-  
   return (
     <div className="App">
-      <Navbar />
-      <Search dataBring={dataBring} />
-      <Cats cats={cats}/>
-      <Parvifolia />
+      <BrowserRouter>
+        <Navbar />
+        <Route exact path='/' component={Home} />
+        <Route exact path='/add' component={AddCat} />
+        <Parvifolia />
+      </BrowserRouter>
     </div>
   );
 }

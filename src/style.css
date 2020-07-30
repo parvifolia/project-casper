@@ -38,7 +38,6 @@ body {
       -ms-flex: 1;
           flex: 1;
   font-family: 'Ranchers', cursive;
-  color: #35bdb6;
 }
 
 .Navbar .nav-wrapper .account {
@@ -58,7 +57,12 @@ body {
 }
 
 .Navbar .nav-wrapper .account .login {
-  margin-right: 8%;
+  margin: 0 8%;
+}
+
+.Navbar .nav-wrapper a {
+  text-decoration: none;
+  color: #35bdb6;
 }
 
 .Search .form-wrapper {
@@ -211,6 +215,70 @@ body {
 .Cats .cats-list ul li .cat-items .dist {
   color: green;
   font-weight: bold;
+}
+
+.AddCat .form-wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.AddCat .form-wrapper form label {
+  margin-top: 3rem;
+}
+
+.AddCat .form-wrapper form input {
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  width: 500px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-family: 'Poppins', sans-serif;
+  background: transparent;
+}
+
+.AddCat .form-wrapper form input:visited, .AddCat .form-wrapper form input:active, .AddCat .form-wrapper form input:focus-within, .AddCat .form-wrapper form input:focus {
+  outline: none;
+}
+
+.AddCat .form-wrapper form .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.AddCat .form-wrapper form .location .latitude, .AddCat .form-wrapper form .location .longitude {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.AddCat .form-wrapper form .location input {
+  width: 245px;
+}
+
+.AddCat .form-wrapper form button {
+  margin-top: 2rem;
+  padding: 0.7rem;
+  border: none;
+  color: white;
+  background: #35bdb6;
+  font-size: 1.3rem;
 }
 
 .Parvifolia {

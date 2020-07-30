@@ -38,7 +38,7 @@ $color1: rgb(53, 189, 182);
             display: flex;
             flex: 1;
             font-family: 'Ranchers', cursive;
-            color: $color1;
+
         }
 
         .account{
@@ -49,8 +49,13 @@ $color1: rgb(53, 189, 182);
             color: $color1;
             
             .login{
-                margin-right: 8%;
+                margin: 0 8%;
             }
+        }
+
+        a{
+            text-decoration: none;
+            color: $color1;
         }
         
     }
@@ -192,6 +197,58 @@ $color1: rgb(53, 189, 182);
 
 
 
+            }
+        }
+    }
+}
+
+.AddCat{
+    .form-wrapper{
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin:auto;
+            text-align: center;
+            align-items: center;
+
+            label{
+                margin-top: 3rem;
+            }
+            input{
+                height: 40px;
+                font-size: 30px;
+                text-align: center;
+                width: 500px;
+                border: none;
+                border-bottom: 1px solid black;
+                font-family: 'Poppins', sans-serif;
+                background:transparent;
+
+
+                &:visited,&:active,&:focus-within,&:focus{
+                    outline: none;
+                }
+            }
+
+            .location{
+                display: flex;
+                .latitude,.longitude{
+                    display: flex;
+                    flex-direction: column;
+                }
+                input{
+                    width: 245px;
+                }
+            }
+
+            button{
+                margin-top: 2rem;
+                padding: 0.7rem;
+                border: none;
+                color: white;
+                background: $color1;
+                font-size: 1.3rem;
             }
         }
     }
