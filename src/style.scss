@@ -30,27 +30,19 @@ $color1: rgb(53, 189, 182);
 .Navbar {
     .nav-wrapper{
         display: flex;
-        width: 90%;
+        width: 85%;
         margin: auto;
+        justify-content: space-between;
         align-items: center;
         
         .logo{
             display: flex;
-            flex: 1;
             font-family: 'Ranchers', cursive;
 
         }
 
         .account{
-            flex: 1;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
             color: $color1;
-            
-            .login{
-                margin: 0 8%;
-            }
         }
 
         a{

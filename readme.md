@@ -1,10 +1,11 @@
+![project image](https://i.hizliresim.com/4uVTBE.png)
+
 # catwalk
 A website that brings together people who want to walk with their cats.
 
-![project image](https://i.hizliresim.com/zA6SIP.png)
-
 ## Project Details
-This is a MERN stack project. API coded with Node.js & Express. Data stored with MongoDB & Mongoose. Front end builded with React. GeoJSON used on distance.
+This is a MERN stack project.  API coded with Node.js & Express.  Data stored with MongoDB & Mongoose.  Front end builded with React.  GeoJSON used on distance.
+
 
 #### Project Setup
 1. open terminal & go to project folder
@@ -15,9 +16,4 @@ This is a MERN stack project. API coded with Node.js & Express. Data stored with
 6. npm start   //react app
 7. ready on localhost:3000
 
-#### Coming soon
-1. Quick review of how it is work
-2. Login & Logout functionality
-3. Add a cat to database with your account
-4. Send a message to other users & meet them
 

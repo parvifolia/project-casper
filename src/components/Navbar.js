@@ -14,8 +14,6 @@ const Navbar = () => {
                     <Link to='/add'>
                     <div className="add">Add a cat</div>
                     </Link>
-                    <div className="login">Login</div>
-                    <div className="join">Join</div>
                 </div>
             </div>
         </div>
